@@ -6,15 +6,28 @@ A voice-activated virtual assistant built entirely in Python.
 
 🚧 Under Development
 
-## Features Planned
+Currently building the first version of Jarvis AI Assistant.
 
+Completed:
+- Basic text-to-speech system
+- Basic speech recognition
+- Voice input and output interaction
+
+
+## Features 
+
+Completed:
 - Voice Recognition
 - Text-to-Speech
+- Basic voice interaction
+
+Planned:
 - Website Automation
 - AI Integration
 - Weather Updates
 - News Headlines
 - Music Playback
+
 
 ## Technologies
 
@@ -23,5 +36,24 @@ A voice-activated virtual assistant built entirely in Python.
 - pyttsx3
 - PyAudio
 
-## author
+## Project Structure
+
+
+jarvis-ai-assistant/
+
+├── main.py
+├── README.md
+├── requirements.txt
+└── .gitignore
+
+
+## Future Improvements
+
+- Add command processing
+- Add AI-based responses
+- Improve conversation handling
+- Add more automation features
+
+## Author
+
 Neha
