@@ -1,0 +1,12 @@
+import datetime
+import webbrowser
+from speak import speak
+
+def tell_time():
+    now = datetime.datetime.now()
+    current_time = now.strftime("%I %M %p")
+    speak(f"The current time is {current_time}")
+
+
+def open_website(url):
+    webbrowser.open(url)
