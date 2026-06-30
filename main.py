@@ -5,4 +5,6 @@ from commands import handle_command
 while True:
 
     command = listen()
-    handle_command(command)
+    print(f"You said: {command}")
+    if command:
+        handle_command(command)

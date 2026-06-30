@@ -8,5 +8,11 @@ def tell_time():
     speak(f"The current time is {current_time}")
 
 
+def tell_date():
+    today = datetime.datetime.now()
+    date = today.strftime("%d %B %Y")
+    speak(f"Today's date is {date}")
+
+    
 def open_website(url):
     webbrowser.open(url)
