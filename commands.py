@@ -16,12 +16,10 @@ def handle_command(command):
         tell_date()
 
     elif "open youtube" in command:
-        speak("Opening YouTube")
-        open_website("https://youtube.com")
+        open_website("youtube", "https://youtube.com")
 
     elif "open google" in command:
-        speak("Opening Google")
-        open_website("https://google.com")
+        open_website("google", "https://google.com")
 
     elif "stop" in command or "exit" in command:
         speak("Goodbye")

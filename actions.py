@@ -14,5 +14,6 @@ def tell_date():
     speak(f"Today's date is {date}")
 
     
-def open_website(url):
+def open_website(name, url):
+    speak(f"Opening {name}")
     webbrowser.open(url)

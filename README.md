@@ -6,8 +6,7 @@ A voice-activated virtual assistant built entirely in Python.
 
 🚧 Under Development
 
-Currently building the first version of Jarvis AI Assistant.
-
+Version 1.0 features are being built.
 
 ## Current modules:
 
@@ -16,7 +15,6 @@ listen.py - Handles voice input
 speak.py - Handles text-to-speech
 commands.py - Processes user commands
 actions.py - Performs assistant actions
-
 
 ## Features 
 
@@ -30,7 +28,7 @@ Completed:
 - Basic command handling
 
 Planned:
-- Wake word detection("Hey Jarvis)
+- Wake word detection("Hey Jarvis")
 - Application control
 - AI Integration
 - Weather Updates
@@ -44,7 +42,7 @@ Planned:
 - SpeechRecognition
 - pyttsx3
 - PyAudio
-- Webbrowser module
+- Python Webbrowser module
 
 ## Project Structure
 

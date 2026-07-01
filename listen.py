@@ -19,7 +19,7 @@ def listen():
         return text
 
 
-    except:
+    except sr.UnknownValueError:
 
         print("Could not understand")
 
