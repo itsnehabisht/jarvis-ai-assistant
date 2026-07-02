@@ -1,5 +1,7 @@
 import datetime
 import webbrowser
+import urllib.parse
+import os
 from speak import speak
 
 def tell_time():
@@ -17,3 +19,15 @@ def tell_date():
 def open_website(name, url):
     speak(f"Opening {name}")
     webbrowser.open(url)
+
+
+def google_search(query):
+    encoded_query = urllib.parse.quote_plus(query)
+    url = f"https://www.google.com/search?q={encoded_query}"
+    speak(f"Searching Google for {query}")
+    webbrowser.open(url)
+
+
+def open_application(app):
+    speak(f"Opening {app}")
+    os.system(f"start {app}")
