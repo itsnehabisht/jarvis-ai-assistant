@@ -1,71 +1,57 @@
 # Jarvis AI Assistant
 
-A voice-activated virtual assistant built entirely in Python.
+A voice-controlled virtual assistant built entirely in Python that can understand voice commands, respond with speech, automate tasks, search the web, and launch applications.
 
-## Project Status
+## 🚧 Project Status
 
-🚧 Under Development
+Under Development (Version 1.0)
 
-Version 1.0 features are being built.
+## ✨ Features
 
-## Current modules:
-
-main.py - Controls the assistant workflow
-listen.py - Handles voice input
-speak.py - Handles text-to-speech
-commands.py - Processes user commands
-actions.py - Performs assistant actions
-
-## Features 
-
-Completed:
+### Completed
 - Voice Recognition
 - Text-to-Speech
-- Basic voice interaction
+- Continuous voice interaction
 - Greeting responses
-- Time telling
-- Website opening
-- Basic command handling
+- Time & Date
+- Google Search
+- Website automation
+- Windows application control
+- Basic command processing
+- Modular project structure
 
-Planned:
-- Wake word detection("Hey Jarvis")
-- Application control
+### Planned
+- Wake word detection ("Hey Jarvis")
 - AI Integration
-- Weather Updates
-- News Headlines
-- Music Playback
+- Weather updates
+- News headlines
+- Music playback
 
+## 🛠 Technologies
 
-## Technologies
-
-- Python
+- Python 3.12
 - SpeechRecognition
 - pyttsx3
 - PyAudio
-- Python Webbrowser module
+- datetime
+- webbrowser
+- os
+- urllib.parse
 
-## Project Structure
+## 📂 Project Structure
 
-
+```
 jarvis-ai-assistant/
-
-├── main.py 
-├── listen.py 
-├── speak.py 
-├── commands.py 
-├── actions.py 
-├── README.md 
-├── requirements.txt 
+├── main.py
+├── listen.py
+├── speak.py
+├── commands.py
+├── actions.py
+├── README.md
+├── requirements.txt
 └── .gitignore
+```
 
+## 👩‍💻 Author
 
-## Future Improvements
-
-- Add smarter command understanding
-- Add AI-based responses
-- Improve conversation handling
-- Add more automation features
-
-## Author
-
-Neha
+**Neha Bisht**
