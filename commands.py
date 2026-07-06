@@ -1,5 +1,6 @@
 from speak import speak
 from actions import tell_time, tell_date, open_website, google_search, open_application
+from ai import ask_ai
 
 def handle_command(command):
     command = command.lower().strip()
@@ -35,8 +36,9 @@ def handle_command(command):
         open_application("notepad")
 
     elif "stop" in command or "exit" in command:
-        speak("Goodbye")
+        speak("ok bye")
         exit()
 
     else:
-        speak("I did not understand your command")
+        response = ask_ai(command)
+        speak(response)
