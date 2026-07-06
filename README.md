@@ -19,10 +19,10 @@ Under Development (Version 1.0)
 - Windows application control
 - Basic command processing
 - Modular project structure
+- AI-powered conversations using Google Gemini
 
 ### Planned
 - Wake word detection ("Hey Jarvis")
-- AI Integration
 - Weather updates
 - News headlines
 - Music playback
@@ -37,7 +37,11 @@ Under Development (Version 1.0)
 - webbrowser
 - os
 - urllib.parse
+- Google Gemini API
+- python-dotenv
+- google-generativeai
 
+  
 ## 📂 Project Structure
 
 ```
@@ -45,6 +49,7 @@ jarvis-ai-assistant/
 ├── main.py
 ├── listen.py
 ├── speak.py
+├── ai.py
 ├── commands.py
 ├── actions.py
 ├── README.md
