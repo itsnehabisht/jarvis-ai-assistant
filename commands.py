@@ -35,7 +35,7 @@ def handle_command(command):
     elif "open notepad" in command:
         open_application("notepad")
 
-    elif "stop" in command or "exit" in command:
+    elif "exit" in command or "quit" in command:
         speak("ok bye")
         exit()
 
