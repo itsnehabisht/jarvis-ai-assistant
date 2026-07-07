@@ -20,9 +20,9 @@ Under Development (Version 1.0)
 - Basic command processing
 - Modular project structure
 - AI-powered conversations using Google Gemini
+- Wake word detection ("Hey Jarvis")
 
 ### Planned
-- Wake word detection ("Hey Jarvis")
 - Weather updates
 - News headlines
 - Music playback
