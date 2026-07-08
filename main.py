@@ -20,6 +20,9 @@ while True:
             speak("Going to sleep.")
 
         else:
+            if "hey jarvis" in command:
+                command = command.replace("hey jarvis", "").strip()
+
             handle_command(command)
 
 
