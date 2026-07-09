@@ -4,6 +4,7 @@ A modular voice-controlled virtual assistant built with Python. Jarvis can under
 
 ## 🏗️ Project Architecture
 
+'''
                         +----------------+
                         |     User       |
                         | (Voice Input)  |
@@ -28,9 +29,9 @@ A modular voice-controlled virtual assistant built with Python. Jarvis can under
                         | Command Router |
                         +-------+--------+
                                 |
-        ---------------------------------------------------------
-        |          |           |          |          |           |
-        v          v           v          v          v           v
+        ----------------------------------------------------------------
+        |            |            |            |           |           |
+        v            v            v            v           v           v
 +--------------+ +---------+ +-----------+ +---------+ +---------+ +----------+
 | actions.py   | | ai.py   | | weather.py| | speak.py| | Browser | | Apps     |
 | Time & Date  | | Gemini  | |OpenWeather| | TTS     | | Search  | | Launcher |
@@ -44,6 +45,7 @@ A modular voice-controlled virtual assistant built with Python. Jarvis can under
                      |    User Output   |
                      | (Voice Response) |
                      +------------------+
+'''
 
 ## ✨ Features
 
