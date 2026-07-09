@@ -14,8 +14,7 @@ while True:
     command = command.lower().strip()
 
     if awake:
-
-        if command == "sleep" or command == "go to sleep":
+        if command in ["ok sleep", "go to sleep"]:
             awake = False
             speak("Going to sleep.")
 
@@ -29,6 +28,7 @@ while True:
     else:
     
         if "hey jarvis" in command:
+
             awake = True
             command = command.replace("hey jarvis", "").strip()
 

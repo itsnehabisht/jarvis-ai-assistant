@@ -13,8 +13,6 @@ from weather import get_weather
 def handle_command(command):
     command = command.lower().strip()
 
-    print("Processing command:", command)
-
     # Greetings
     if command in ["hi", "hello"]:
         speak("Hello! How can I help you?")
@@ -36,7 +34,23 @@ def handle_command(command):
 
     # Google Search
     elif "search" in command:
-        query = command.replace("search", "").strip()
+        query = command
+
+        words_to_remove = {
+            "search",
+            "for",
+            "please",
+            "can",
+            "you",
+            "ok",
+            "okay",
+            "then",
+        }
+
+        query = " ".join(
+            word for word in query.split()
+            if word not in words_to_remove
+        )
 
         if query:
             google_search(query)

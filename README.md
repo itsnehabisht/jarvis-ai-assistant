@@ -1,61 +1,79 @@
-# Jarvis AI Assistant
+# 🤖 Jarvis AI Assistant
 
-A voice-controlled virtual assistant built entirely in Python that can understand voice commands, respond with speech, automate tasks, search the web, and launch applications.
-
-## 🚧 Project Status
-
-Under Development (Version 1.0)
+A modular voice-controlled virtual assistant built with Python. Jarvis can understand voice commands, perform automation tasks, answer questions using Google's Gemini AI, and provide live weather updates.
 
 ## ✨ Features
 
-### Completed
-- Voice Recognition
-- Text-to-Speech
-- Continuous voice interaction
-- Greeting responses
-- Time & Date
-- Google Search
-- Website automation
-- Windows application control
-- Basic command processing
-- Modular project structure
-- AI-powered conversations using Google Gemini
-- Wake word detection ("Hey Jarvis")
+- 🎤 Voice Recognition
+- 🔊 Text-to-Speech
+- 🤖 Gemini AI Integration
+- 🌦️ Live Weather Information
+- 🌐 Open Websites
+- 🔍 Google Search
+- 💻 Open Applications
+- ⏰ Tell Time & Date
+- 😴 Wake/Sleep Mode
+- 🔐 Secure API Keys using `.env`
 
-### Planned
-- Weather updates
-- News headlines
-- Music playback
+## 🛠️ Technologies Used
 
-## 🛠 Technologies
-
-- Python 3.12
+- Python
 - SpeechRecognition
 - pyttsx3
 - PyAudio
-- datetime
-- webbrowser
-- os
-- urllib.parse
 - Google Gemini API
+- OpenWeatherMap API
+- Requests
 - python-dotenv
-- google-generativeai
 
-  
 ## 📂 Project Structure
 
 ```
 jarvis-ai-assistant/
-├── main.py
-├── listen.py
-├── speak.py
-├── ai.py
-├── commands.py
-├── actions.py
-├── README.md
-├── requirements.txt
-└── .gitignore
+│── main.py
+│── listen.py
+│── speak.py
+│── commands.py
+│── actions.py
+│── ai.py
+│── weather.py
+│── requirements.txt
+│── README.md
+│── .gitignore
 ```
+
+## 🚀 Installation
+
+```bash
+git clone https://github.com/itsnehabisht/jarvis-ai-assistant.git
+
+cd jarvis-ai-assistant
+
+pip install -r requirements.txt
+```
+
+Create a `.env` file:
+
+```env
+GEMINI_API_KEY=your_gemini_api_key
+OPENWEATHER_API_KEY=your_openweather_api_key
+```
+
+Run the assistant:
+
+```bash
+python main.py
+```
+
+## 🔮 Future Improvements
+
+- Interrupt speech while speaking
+- News Headlines
+- Music Playback
+- Volume Control
+- Better Natural Language Understanding
+- Reminder & Notes
+- Smart Home Integration
 
 ## 👩‍💻 Author
 
