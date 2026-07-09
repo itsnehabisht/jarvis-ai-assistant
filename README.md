@@ -3,29 +3,28 @@
 A modular voice-controlled virtual assistant built with Python. Jarvis can understand voice commands, perform automation tasks, answer questions using Google's Gemini AI, and provide live weather updates.
 
 ## 🏗️ Project Architecture
-
-           User
-             │
-             ▼
-       Speech Input
-             │
-             ▼
-        listen.py
-             │
-             ▼
-         main.py
-             │
-             ▼
-      commands.py
-      /     |      \
-     /      |       \
-actions   ai.py   weather.py
-     \      |       /
-      \     |      /
-           speak.py
-             │
-             ▼
-      Voice Response
+              User
+               │
+               ▼
+         Speech Input
+               │
+               ▼
+           listen.py
+               │
+               ▼
+            main.py
+               │
+               ▼
+           commands.py
+         /     |      \
+        /      |       \
+    actions   ai.py   weather.py
+        \      |       /
+         \     |      /
+            speak.py
+               │
+               ▼
+         Voice Response
 
 ## ✨ Features
 
