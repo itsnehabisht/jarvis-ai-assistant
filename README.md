@@ -4,47 +4,28 @@ A modular voice-controlled virtual assistant built with Python. Jarvis can under
 
 ## 🏗️ Project Architecture
 
-                        +----------------+
-                        |     User       |
-                        | (Voice Input)  |
-                        +-------+--------+
-                                |
-                                v
-                        +----------------+
-                        |   listen.py    |
-                        | SpeechRecognition
-                        +-------+--------+
-                                |
-                                v
-                        +----------------+
-                        |    main.py     |
-                        | Wake Word Logic|
-                        | Sleep/Wake Mode|
-                        +-------+--------+
-                                |
-                                v
-                        +----------------+
-                        | commands.py    |
-                        | Command Router |
-                        +-------+--------+
-                                |
-        ----------------------------------------------------------------
-        |            |            |            |           |           |
-        v            v            v            v           v           v
-+--------------+ +---------+ +-----------+ +---------+ +---------+ +----------+
-| actions.py   | | ai.py   | | weather.py| | speak.py| | Browser | | Apps     |
-| Time & Date  | | Gemini  | |OpenWeather| | TTS     | | Search  | | Launcher |
-+------+-------+ +----+----+ +-----+-----+ +----+----+ +---------+ +----------+
-       |              |            |            |
-       |              |            |            |
-       +--------------+------------+------------+
-                              |
-                              v
-                     +------------------+
-                     |    User Output   |
-                     | (Voice Response) |
-                     +------------------+
-
+           User
+             │
+             ▼
+       Speech Input
+             │
+             ▼
+        listen.py
+             │
+             ▼
+         main.py
+             │
+             ▼
+      commands.py
+      /     |      \
+     /      |       \
+actions   ai.py   weather.py
+     \      |       /
+      \     |      /
+           speak.py
+             │
+             ▼
+      Voice Response
 
 ## ✨ Features
 
