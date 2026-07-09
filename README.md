@@ -4,7 +4,6 @@ A modular voice-controlled virtual assistant built with Python. Jarvis can under
 
 ## 🏗️ Project Architecture
 
-'''
                         +----------------+
                         |     User       |
                         | (Voice Input)  |
@@ -45,7 +44,7 @@ A modular voice-controlled virtual assistant built with Python. Jarvis can under
                      |    User Output   |
                      | (Voice Response) |
                      +------------------+
-'''
+
 
 ## ✨ Features
 
